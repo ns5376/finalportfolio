@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character set declaration for proper text rendering -->
     <meta charset="UTF-8">
-    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title of the webpage -->
     <title>Nisa Shahid - Personal Portfolio</title>
-    <!-- Link to external CSS for styling -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header section containing navigation and logo -->
     <header>
-        <!-- Logo that links to the top of the page -->
         <div class="logo"><a href="#hero">Nisa Shahid</a></div>
-        <!-- Navigation menu -->
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -27,35 +20,27 @@
         </nav>
     </header>
 
-    <!-- Hero section with introductory text and a call-to-action button -->
     <section id="hero">
-        <!-- Animated text and cursor effect for dynamic presentation -->
         <h1 id="animated-text-container"><span id="animated-text"><i></i></span><span class="cursor"></span></h1>
         <h3> traveller, designer and programmer</h3>
-        <!-- Button that leads to the About section -->
         <button id="discover-btn"><a href="#about">Come travel through my portfolio!</a></button>
     </section>
 
-    <!-- About section with personal information and image -->
     <section id="about">
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <!-- Paragraph describing personal interests and academic background -->
                 <p>Welcome to my personal portfolio. I am passionate about traveling and capturing beautiful moments through my lens. I am a rising junior at New York University Abu Dhabi, majoring in Computer Science and minoring in Applied Mathematics and Arabic. I am a language enthusiast with a love for exploring new places. Explore my work and get to know more about me. </p>
             </div>
             <div class="about-image">
-                <!-- Image in the About section -->
                 <img src="img/about.jpg" alt="About Me Image">
             </div>
         </div>
     </section>
 
-    <!-- Skills section showcasing different abilities -->
     <section id="skills">
         <h2>My Skills</h2>
         <div class="skills-container">
-            <!-- Individual skill blocks with pop-up descriptions on hover -->
             <div class="skill">
                 <img src="img/camera.jpg" alt="Photography" class="skill-image">
                 <div class="skill-popup">Photography</div>
@@ -69,43 +54,73 @@
                 <div class="skill-popup">Graphic Design</div>
             </div>
             <div class="skill">
-                <img src="img/python.jpg" alt="Python" class="skill-image">
+                <img src="img/python.jpg" alt="Graphic Design" class="skill-image">
                 <div class="skill-popup">Python</div>
             </div>
         </div>
     </section>
 
-    <!-- Projects section displaying portfolio pieces -->
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-container">
-            <!-- Individual project entries with links to view more details -->
             <div class="project">
                 <h3>Whispers of the Campus</h3>
                 <a href = "https://ns5376.github.io/assignment1-github.io/"><img src = "img/30mff.jpg" width= 290px height = 200px></a>
+
             </div>
-            <!-- More projects follow the same structure -->
+            <div class="project">
+                <h3>11th Hour Heroics</h3>
+                <a href = "https://aarz1401.github.io/11th_Hour_Heroic/"><img src = "img/comic.jpg" width= 290 height = 200px></a>
+            </div>
+            <div class="project">
+                <h3>No Room For Suri</h3>
+                <a href = "https://shahzaib70456.github.io/Video/"><img src = "img/film.jpg" width= 290 height = 200px></a>
+            </div>
+            <div class="project">
+                <h3>Police Chase Chronicles</h3>
+                <a href = "https://ns5376.github.io/Police-Chase-Chronicles/"><img src = "img/sound.jpg" width= 290 height = 200px></a>
+            </div>
+            <div class="project">
+                <h3>Fireboy and Watergirl</h3>
+                <a href = "https://github.com/ns5376/Fire-boy-and-Water-girl"><img src = "img/fnb.jpg" width= 290 height = 200px></a>
+            </div>
+            <div class="project">
+                <h3>Adventures of a Young Explorer</h3>
+                <a href = "https://ns5376.github.io/scrfollanimation/"><img src = "img/explore.jpg" width= 290 height = 200px></a>
+            </div>
+            <div class="project">
+                <h3>Interactive Pencil</h3>
+                <a href = "https://ns5376.github.io/illustrator/svg.html"><img src = "img/pencil.jpg" width= 290 height = 200px></a>
+            </div>
         </div>
     </section>
 
-    <!-- Gallery section for travel photography with interactive hover effects -->
     <section id="gallery">
         <h2>Travel Photography</h2>
         <div class="gallery-container">
-            <!-- Images change on hover to show different views -->
             <div class="gallery-item">
                 <img src="img/franceslider.jpg" alt="France" class="main-image">
                 <img src="img/france.jpg" alt="Art 1 Hover" class="hover-image">
             </div>
-            <!-- More gallery items follow the same structure -->
+            <div class="gallery-item">
+                <img src="img/spainslider.jpg" alt="Spain" class="main-image">
+                <img src="img/spain.jpg" alt="Art 2 Hover" class="hover-image">
+            </div>
+            <div class="gallery-item">
+                <img src="img/norwayslider.jpg" alt="Norway" class="main-image">
+                <img src="img/norway.jpg" alt="Art 3 Hover" class="hover-image">
+            </div>
+            <div class="gallery-item">
+                <img src="img/hollandslider.jpg" alt="The Netherlands" class="main-image">
+                <img src="img/holland.jpg" alt="Art 4 Hover" class="hover-image">
+            </div>
         </div>
     </section>
 
-    <!-- Contact form for user communication -->
+
     <section id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
-            <!-- Input fields for name, email, and message -->
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
@@ -113,27 +128,26 @@
         </form>
     </section>
 
-    <!-- Modal for displaying larger images or content -->
+    
+
+    <!-- The Modal -->
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
         <div id="caption"></div>
     </div>
-
-    <!-- Footer with social links and copyright notice -->
     <footer>
         <div class="footer-content">
             <div class="social-icons">
                 <a href="https://www.instagram.com/nisa.shahidd/" target="_blank"><img src="img/link.jpg" alt="Twitter"></a>
                 <a href="https://www.linkedin.com/in/nisa-shahid-563362275/" target="_blank"><img src="img/instagram.jpg" alt="LinkedIn"></a>
-                <a href="https://github.com/ns5376" target="_blank"><img src="img/git.jpg" alt="GitHub"></a>
+                <a href="https://github.com/ns5376 target="_blank"><img src="img/git.jpg" alt="GitHub"></a>
             </div>
             <br>
             <p>&copy; 2024 Nisa Shahid. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Link to external JavaScript file for interactive behaviors -->
     <script src="script.js"></script>
 </body>
 </html>
